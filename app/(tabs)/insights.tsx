@@ -1,11 +1,15 @@
 import React from "react";
 import { Text, View } from "react-native";
+import { SafeAreaView as RNSafeAreaView } from "react-native-safe-area-context";
+import { styled } from "nativewind";
+
+const SafeAreaView = styled(RNSafeAreaView);
 
 const insights = () => {
   return (
-    <View>
+    <SafeAreaView className="flex-1 bg-background p-4">
       <Text>insights</Text>
-    </View>
+    </SafeAreaView>
   );
 };
 
